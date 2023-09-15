@@ -2,7 +2,7 @@ FROM minio/minio:latest
 
 ENV PATH=/opt/bin
 ENV FOLDER_PATH=${PATH}/server
-RUN mkdir -p ${FOLDER_PATH}
+RUN mkdir -p $FOLDER_PATH
 
 RUN touch ${PATH}/exec.sh 
 RUN echo '#!/bin/sh' > ${PATH}/exec.sh
