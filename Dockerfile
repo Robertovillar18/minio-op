@@ -1,6 +1,6 @@
 FROM minio/minio:latest
 
-ENV PATH=/opt/bin
+ENV PATH=/opt/bin:$PATH
 # ENV FOLDERPATH=${PATH}/server
 # RUN mkdir -p /opt/bin/server
 
