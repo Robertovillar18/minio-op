@@ -1,7 +1,7 @@
 FROM minio/minio:latest
 
-ENV PATH=/opt/bin:$PATH
-ENV TMP=/tmp
+ENV TMP=/opt/bin
+# ENV TMP=/tmp
 
 RUN touch ${TMP}/exec.sh 
 RUN echo '#!/bin/sh' > ${TMP}/exec.sh
