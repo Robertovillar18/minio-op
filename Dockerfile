@@ -4,12 +4,12 @@ ENV PATH=/opt/bin:$PATH
 # ENV FOLDERPATH=${PATH}/server
 # RUN mkdir -p /opt/bin/server
 
-RUN touch ${PATH}/exec.sh 
+RUN touch ${PATH}/exec.sh
 RUN echo '#!/bin/sh' > ${PATH}/exec.sh
 RUN echo "echo 'Hola'" >> ${PATH}/exec.sh
 RUN echo 'tail -f /dev/null' >> ${PATH}/exec.sh
 
-# RUN touch ${PATH}/entrypoint.sh 
+# RUN touch ${PATH}/entrypoint.sh
 # RUN echo '#!/bin/sh' > ${PATH}/entrypoint.sh
 # RUN echo "mkdir '${FOLDER_PATH}'" >> ${PATH}/entrypoint.sh
 # RUN echo "echo '${FOLDER_PATH}'" >> ${PATH}/entrypoint.sh
